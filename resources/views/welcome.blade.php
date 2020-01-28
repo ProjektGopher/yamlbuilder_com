@@ -15,45 +15,32 @@
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
 <div class="flex flex-col">
-    @if(Route::has('login'))
-        <div class="absolute top-0 right-0 mt-4 mr-4">
-            @auth
-                <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase">{{ __('Home') }}</a>
-            @else
-                <a href="{{ route('login') }}" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase pr-6">{{ __('Login') }}</a>
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase">{{ __('Register') }}</a>
-                @endif
-            @endauth
-        </div>
-    @endif
-
     <div class="min-h-screen flex items-center justify-center">
         <div class="flex flex-col justify-around h-full">
             <div>
                 <h1 class="text-gray-600 text-center font-light tracking-wider text-5xl mb-6">
-                    {{ config('app.name', 'Laravel') }}
+                    YAML Builder
                 </h1>
                 <ul class="list-reset">
                     <li class="inline pr-8">
-                        <a href="https://laravel.com/docs" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="Documentation">Documentation</a>
+                        <a href="#" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="Documentation">Documentation</a>
                     </li>
                     <li class="inline pr-8">
-                        <a href="https://laracasts.com" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="Laracasts">Laracasts</a>
+                        <a href="" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="Validate">Validate YAML</a>
                     </li>
                     <li class="inline pr-8">
-                        <a href="https://laravel-news.com" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="News">News</a>
+                        <a href="" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="Examples">Examples</a>
                     </li>
                     <li class="inline pr-8">
-                        <a href="https://nova.laravel.com" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="Nova">Nova</a>
+                        <a href="" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="Drivers">Available Drivers</a>
                     </li>
                     <li class="inline pr-8">
-                        <a href="https://forge.laravel.com" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="Forge">Forge</a>
-                    </li>
-                    <li class="inline pr-8">
-                        <a href="https://github.com/laravel/laravel" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="GitHub">GitHub</a>
+                        <a href="https://github.com/ProjektGopher/yamlbuilder_com" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="GitHub">GitHub</a>
                     </li>
                 </ul>
+            </div>
+            <div class="text-gray-500 text-center font-light text-sm mt-6">
+                This open source project is hosted and maintained by Projekt Gopher Multimedia
             </div>
         </div>
     </div>
