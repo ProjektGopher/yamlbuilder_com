@@ -1,0 +1,1 @@
+<span {{ $attributes->merge(['class' => 'px-4 py-2 m-2 font-bold text-gray-800 uppercase bg-green-300 border-2 border-green-700 rounded-full']) }} draggable="true" ondragstart="dragstart_handler(event)" d-type="column.modifier" d-action="copy">{{ $slot }}</span>
